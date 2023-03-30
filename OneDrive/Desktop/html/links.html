@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a.special:link {
+            color: green;
+        }
+        
+        a.special:visited {
+            color: red;
+        }
+        .nice {
+        font-family: sans-serif;
+    }
+        </style>
+</head>
+<body>
+    <p id="mytext">My text</p>
+    <p><a href="#">This is a standard link, it will become purple when clicked</a></p>
+<p><a class="special" href="#">This is a special colored link and become red when clicked</a></p>
+    <!-- <script>
+        var el = document.getElementById("mytext");
+        el.classList.add("nice");    // adds the nice class to the paragraph
+        el.classList.remove("nice"); // removes the nice class from the paragraph
+        el.classList.toggle("nice"); // adds the nice class to the paragraph again, since it does not currently
+                                     // contain the nice class.
+
+        if (el.classList.contains("nice")) {
+            alert("The element contains the 'nice' class.");
+        }
+        
+    </script> -->
+
+    <footer>
+        <a href="C:\Users\sahzad\OneDrive\Desktop\HOST\bootstrap.html"><button type="button">Home</button></a>
+    </footer>
+   
+    <pre><code>var para = document.querySelector('p');
+
+        para.onclick = function() {
+          alert('Owww, stop poking me!');
+        }</code></pre>
+        
+        <p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+        
+        <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+        
+        <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+        
+        <pre>$ <samp> ping mozilla.org</samp>
+        <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+        64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+
+        <!-- Standard simple date -->
+<time datetime="22-03-2022">22 March 2022</time>
+<br>
+<!-- Just year and month -->
+<time datetime="03-2022">March 2016</time>
+<br>
+<!-- Just month and day -->
+<time datetime="03-22">22 March</time>
+<br>
+<!-- Just time, hours and minutes -->
+<time datetime="07:43">19:43</time>
+<br>
+<!-- You can do seconds and milliseconds too! -->
+<time datetime="07:43:50:856">19:43:50.856</time>
+<br>
+<!-- Date and time -->
+<time datetime="22-03-2022T07:43">7.43pm, 22 March 2022</time>
+<br>
+<!-- Date and time with timezone offset -->
+<time datetime="2022-01-20T19:30+01:00">7.30pm, 20 January 2022 is 7.30pm in India</time>
+<br>
+<!-- Calling out a specific week number -->
+<time datetime="2022-W04">The fourth week of 2022</time>
+</body>
+</html>

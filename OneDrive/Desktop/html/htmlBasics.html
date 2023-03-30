@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a.special:link {
+            color: green;
+        }
+        
+        a.special:visited {
+            color: red;
+        }
+        .nice {
+        font-family: sans-serif;
+    }
+        </style>
+</head>
+<body>
+    <p id="mytext">My text</p>
+    <p><a href="#">This is a standard link, it will become purple when clicked</a></p>
+<p><a class="special" href="#">This is a special colored link and become red when clicked</a></p>
+    <!-- <script>
+        var el = document.getElementById("mytext");
+        el.classList.add("nice");    // adds the nice class to the paragraph
+        el.classList.remove("nice"); // removes the nice class from the paragraph
+        el.classList.toggle("nice"); // adds the nice class to the paragraph again, since it does not currently
+                                     // contain the nice class.
+
+        if (el.classList.contains("nice")) {
+            alert("The element contains the 'nice' class.");
+        }
+        
+    </script> -->
+</body>
+</html>

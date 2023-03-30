@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Text field</h2>
+<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit"><br><br>
+  <h2>Input type checkbox   </h2>
+  <label for="vehicle">Cars</label><br>
+  <input type="checkbox" id="vehicle" value="vehicle">toyota <br>
+  <input type="checkbox" id="vehicle" value="vehicle">verna <br>
+  <input type="checkbox" id="vehicle" value ="vehicle">jeep <br>
+    <h2>Intput type colored</h2>
+    <label for="color">Choose colors</label>
+    <input type="color" id="color" name="color">
+    <input type="submit" value="submit">
+    <h2>choose you date of birth</h2>
+    <label for="date">DOB</label><br>
+    <input type="date" id="date" value="date"><br>
+    <input type="submit" value="submit">
+    <h2>date time local</h2>
+    <label for="date">todays date</label><br>
+    <input type="datetime-local" id="date" value="date"><br>
+    <input type="submit" value="submit">
+    <h2>Email input</h2>
+    <!-- <label for="email">Email</label><br>
+    <input type="email" id="email" value="email"><br>
+    <input type="submit" value="submit"> -->
+    <h2>File Input</h2>
+    <label for="file">Browse files</label><br>
+    <input type="file" id="file" value="file"><br>
+    <input type="submit" value="submit">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="hidden" id="custId" name="custId" value="3487">
+    <input type="submit" value="Submit">
+    <label for="url">url input</label>
+    <input type="url" id="url" name="url">
+    <label for="password">Enter your password</label>
+    <input type="password" id="pass" value="password" min="8"><br>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+    <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+<p>Note that the form itself is not visible.</p>
+<p>Also note that the default width of a text field is 20 characters.</p>
+
+</body>
+</html>
+

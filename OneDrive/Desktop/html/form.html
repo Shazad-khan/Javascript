@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>HTML forms</h2>
+    <form action="">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname"  name="fname" value="Shazad"><br> <br>  
+        <label for="lname">last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Khan"><br><br>
+        <label for="Gender">Gender</label><br>
+        <input type="radio" id="Male" name="Gender" value="Male">
+           <label for="Male">Male</label><br>
+           <input type="radio" id="Female" name="Gender" value="Female">
+           <label for="Female">Female</label><br>
+            <input type="radio" id="Others" name="Gender" value="Others">
+            <label for="Others">Others</label><br><br>
+            <label for="vehicle">vehicles I have</label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Truck</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Bike</label><br><br>
+            <input type="submit" value="submit"><br>
+            <form action="/action_page.php">
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars" size="1" multiple>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <input type="submit"><br>
+
+                <button type="button" onclick="alert('hello world')">alert</button>
+                <form action="/action_page.php">
+                    <fieldset>
+                      <legend>Personalia:</legend>
+                      <label for="fname">First name:</label><br>
+                      <input type="text" id="fname" name="fname" value="John"><br>
+                      <label for="lname">Last name:</label><br>
+                      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                      <input type="submit" value="Submit">
+                    </fieldset>
+                  </form>
+    </form>
+                     
+
+  <form action="">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <input type="submit">
+  </form>
+  
+  <p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1.</p>
+       
+  <h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+</body>
+</html>
