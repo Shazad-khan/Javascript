@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>tattoo shop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="banner">
+           <img src="IMAGES/logo1.png" class="logo">
+           <div class="banner-text">
+               <h1>Tattoo Studio</h1>
+               <p>Style Your Self With A Tattoo</p>
+               <div class="banner-btn">
+                   <a href="#"><span></span>Find Out</a>
+                   <a href="#"><span></span> More</a>
+               </div>
+           </div>
+        </section>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Testimonals</a></li>
+            <li><a href="#">Meet Us</a></li>
+        </ul>
+    </nav>
+    <div id="menuBtn">
+        <img src="IMAGES/menu.png" alt="">
+    </div>
+</div>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+menuBtn.onclick = function(){
+    if(sideNav.style.right=="-250px")
+    sideNav.style.right="0"
+    }
+    else{
+    sideNav.style.right="-250px"
+    }
+</script>
+    </body>
+</html>

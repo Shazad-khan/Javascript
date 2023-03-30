@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assingment.css">
+    <title>Productboard-Welcome</title>
+</head>
+<body>
+<section>
+ 
+    <div class="contentBox">
+        <div class="formbox">
+            <div class="product">
+            <img src="logo.png" alt="">
+            <h2><strong> productboard</strong></h2><br><br>            
+        </div>
+            <h2> Sing in to your workspace</h2><br><br>
+            <div class="gobtn">
+                <img src="google.png" alt="">
+                <button id="google" aria-placeholder="Sing in with Google" ><a href="https://www.google.com">Sing in with Google</a> </button>
+            <br>
+            </div><br><br>
+            <div class="horizontal">
+                <span class="hor1"><hr></span>
+                    <span class="hor2" style="justify-content: center;"><button><strong> OR USE GMAIL</strong></button></span>
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <br>
+                    <span><strong> Email</strong></span><br>
+                    <input type="text" name="" placeholder="john@company.com" required>
+                </div>
+                <div class="inputbox">
+                    <span><strong> Password</strong></span><br>
+                    <input type="password" name="" placeholder="Password" id="password">
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+                
+                <div class="Remember">
+                    <input type="checkbox"><label for="remember" class="p1">Remember Me</label>
+                   <span class="p2" ><a href="forget.html" style="float: right;"> Forget Password</a></span>
+                    
+                </div>
+                <br>
+                <div class="inputbox"><br>
+                    <input type="submit" value=" Log me in" name="">
+                </div>
+                <div class="inputbox">
+                    <p></p>
+                </div><br><br><br>
+                <div class="createOne">
+                    <p>Don’t have an account?</p><a href="createAccount.html">Sign up</a> 
+                </div>
+            </form>
+            <script>
+                const togglePassword = document.querySelector("#togglePassword");
+                const password = document.querySelector("#password");
+        
+                togglePassword.addEventListener("click", function () {
+                    // toggle the type attribute
+                    const type = password.getAttribute("type") === "password" ? "text" : "password";
+                    password.setAttribute("type", type);
+                    
+                    // toggle the icon
+                    this.classList.toggle("bi-eye");
+                });
+        
+                // prevent form submit
+                const form = document.querySelector("form");
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                });
+            </script>
+        </div>
+        
+
+    </div>
+    <div class="imgBox">
+        <img src="image.jpg" alt="">
+    </div>   
+
+</section>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+</style>
+</head>
+<body>
+
+<ol>
+  <li>starters</li>
+  <li>drinks  
+  <ol>
+    <li>coocktails</li>
+    <li>mocktails</li>
+    <li>fruit juice
+    <ol>
+      <li>orange juice</li>
+      <li>apple juice</li>
+      <li>mango juice</li>
+    </ol>
+    </li>
+    <li>soft drinks</li>
+  </ol>
+  </li>
+  <li>main course</li>
+  <li>desert</li>
+</ol>
+
+<ol>
+  <li>pan</li>
+  <li>fruit salad</li>
+</ol>
+
+</body>
+</html>
+
+

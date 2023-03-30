@@ -1,0 +1,24 @@
+#countries{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    /* border-collapse: collapse; */
+    text-align: center;
+    text-transform: capitalize;
+}
+#countries td, #countries th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#countries tr:nth-child(even){
+    background-color: cadetblue;
+}
+#countries tr:hover{
+    background-color: aquamarine;
+}
+#countries th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: limegreen;
+    color: white;
+}

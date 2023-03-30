@@ -1,0 +1,45 @@
+<!-- 
+    1.descendant selector select all elements that are descendants a specified element
+    2.child selector (>) it selects all the elements that are the childre of a specified element
+    3.adjacent sibling selector (+) is used to selet an element that is direclty after another specific element
+    4.general sibling selector(~) it selects all elements that are next siblings of a specified element
+ -->
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+/* descendat selector */
+
+/* div p {
+  background-color: yellow;
+} */
+/* child selectors */
+/* div > p {
+  background-color: green;
+} */
+/* adjacent sibling selector */
+/* div + p {
+  background-color: yellow;
+} */
+/* general sibling selector */
+div ~ p {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Selectors</h2>
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+

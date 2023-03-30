@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(60, 60, 60, 0.3);
+    background-image: url("tree.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    background-attachment: fixed;
+    background-size: contain;
+}
+h1{
+    font-family: sans-serif;
+    color: black;
+    border: 2px solid tomato;
+}
+div {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    /* margin: auto; */
+    background-color: lightblue;
+    padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  outline: 1px solid red;
+  outline-offset: 15px;
+}
+p{
+    text-decoration-line: overline underline;
+    text-decoration-color: purple;
+}

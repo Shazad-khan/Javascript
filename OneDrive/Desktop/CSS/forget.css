@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* background-color: #607d8b;  */
+}
+section .imgBox{
+    position: relative;
+    width: 20%;
+    height: auto;
+}
+section .imgBox img{
+    position: absolute;
+    attachment: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentBox{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+section .contentBox .formbox{
+    width: 35%;
+    margin-bottom: 130px;
+    margin-right: 235px;
+}
+section .contentBox .formbox .product h2{
+    position: relative;
+    left: 45px;
+    bottom: 1px;
+}
+section .contentBox .formbox p{
+    width: 150%;
+    color: #607d8b;
+    position: relative;
+}
+section .contentBox .formbox .product img{
+    position: relative;
+    top: 30px;
+    left: 0;
+}
+section .contentBox .formbox .inputbox{
+margin-bottom: 20px;
+}
+section .contentBox .formbox .inputbox span{
+    font-size: 11px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: grey;
+    font-weight: 300;
+    letter-spacing: 0px;
+
+}
+section .contentBox .formbox .inputbox input{
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 5px;
+}
+section .contentBox .formbox .inputbox input[type="submit"]
+{
+    background-color: rgb(35, 168, 245);
+    color: white;
+    font-size: 18px;
+}
+section .contentBox .formbox .inputbox input[type="submit"]:hover{
+    background-color: rgb(7, 112, 173);
+}
+
+
+
